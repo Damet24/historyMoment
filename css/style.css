@@ -20,6 +20,7 @@ a {
   margin-right: 5.555555%;
   top: 0;
   width: 100%;
+  z-index: 100;
 }
 
 .head {
@@ -106,14 +107,39 @@ a {
 .sc-form {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  align-items: flex-start;
+  flex-direction: row;
 }
 
-.sc-form form input {  
+.sc-form form .form-item {  
+  width: 100%;
+  margin: 5px;
+  padding: 5px;
+}
+
+.textarea {
+  resize: none;
+  overflow: hidden;
+}
+
+.form-inupt {
   width: 100%;
   height: 40px;
+}
+.btn {
+  padding: 5px;
   margin: 5px;
+
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: .25s;
+}
+
+.btn:hover {
+  background-color: #999;
+  color: black;
 }
 
 footer {
@@ -131,4 +157,16 @@ footer {
 
 footer p {
   font-size: 12pt;
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.reveal.active {
+  transform: translateY(0px);
+  opacity: 1;
 }
