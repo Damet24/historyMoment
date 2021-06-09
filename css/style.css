@@ -59,3 +59,10 @@ a {
   border-radius: 10px;
   min-height: 90vh;
 }
+
+.seccion-title {
+  height: 10vh;
+  padding: 10px;
+  margin: auto;
+  text-align: center;
+}
