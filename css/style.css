@@ -55,9 +55,17 @@ a {
 
 .gallery {
   margin: 10px;
-  border: 1px solid gray;
+  padding: 5px;
+  border: 1px solid #cfcfcf;
   border-radius: 10px;
-  min-height: 90vh;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  grid-gap: 5px;
+
+  -webkit-box-shadow: 0px 0px 20px -8px rgba(0, 0, 0, 0.57);
+  box-shadow: 0px 0px 20px -8px rgba(0, 0, 0, 0.57);
 }
 
 .seccion-title {
@@ -65,4 +73,62 @@ a {
   padding: 10px;
   margin: auto;
   text-align: center;
+}
+
+.item-gallery {
+  border-radius: 5px;
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  -webkit-box-shadow: 0px 0px 20px -8px rgba(0, 0, 0, 0.57);
+  box-shadow: 0px 0px 20px -8px rgba(0, 0, 0, 0.57);
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 400px;
+}
+
+.bio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bio p {
+  text-align: center;
+  padding: 20px;
+}
+
+.sc-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sc-form form input {  
+  width: 100%;
+  height: 40px;
+  margin: 5px;
+}
+
+footer {
+  background-color: #000;
+
+  height: 300px;
+  font-size: 34pt;
+  color: gray;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer p {
+  font-size: 12pt;
 }

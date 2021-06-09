@@ -1,26 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;800&display=swap" rel="stylesheet">
-  <title>History Moment</title>
-</head>
-<body>
-  <div class="head" id="head" >
-    <div class="main"><h1>texto de presentacion(o logo)</h1></div>
-    <nav class="navigator" id="nav">
-      <a class="nav-item" href="#head">HOME</a>
-      <a class="nav-item" href="#gallery">GALERIA</a>
-      <a class="nav-item" href="#">BIO</a>
-      <a class="nav-item" href="#">CONTACTO</a>
-    </nav>
-  </div>
-  <h1 class="seccion-title" id="gallery"></h1>
-  <h1 class="seccion-title">GALERIA</h1>
-  <div class="gallery"></div>
-  <script src="./js/scroll.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>History Moment</title>
+  </head>
+  <body>
+
+    <div class="head" id="head">
+      <div class="main"><h1>texto de presentacion(o logo)</h1></div>
+      <nav class="navigator" id="nav">
+        <a class="nav-item" href="#head">HOME</a>
+        <a class="nav-item" href="#gallery">GALERIA</a>
+        <a class="nav-item" href="#bio">BIO</a>
+        <a class="nav-item" href="#contact">CONTACTAME</a>
+      </nav>
+    </div>
+
+    <h1 class="seccion-title" id="gallery"></h1>
+    <h1 class="seccion-title">GALERIA</h1>
+    <div class="gallery">
+      <img class="item-gallery" src="./img/img1.jpg" alt="img" />
+      <img class="item-gallery" src="./img/img2.jpg" alt="img" />
+      <img class="item-gallery" src="./img/img3.jpg" alt="img" />
+      <img class="item-gallery" src="./img/img1.jpg" alt="img" />
+      <img class="item-gallery" src="./img/img2.jpg" alt="img" />
+      <img class="item-gallery" src="./img/img1.jpg" alt="img" />
+      <img class="item-gallery" src="./img/img2.jpg" alt="img" />
+      <img class="item-gallery" src="./img/img1.jpg" alt="img" />
+      <img class="item-gallery" src="./img/img2.jpg" alt="img" />
+      <img class="item-gallery" src="./img/img1.jpg" alt="img" />
+      <img class="item-gallery" src="./img/img2.jpg" alt="img" />
+      <img class="item-gallery" src="./img/img1.jpg" alt="img" />
+      <img class="item-gallery" src="./img/img2.jpg" alt="img" />
+      <img class="item-gallery" src="./img/img3.jpg" alt="img" />
+      <img class="item-gallery" src="./img/img1.jpg" alt="img" />
+      <img class="item-gallery" src="./img/img2.jpg" alt="img" />
+      <img class="item-gallery" src="./img/img1.jpg" alt="img" />
+      <img class="item-gallery" src="./img/img2.jpg" alt="img" />
+      <img class="item-gallery" src="./img/img1.jpg" alt="img" />
+      <img class="item-gallery" src="./img/img2.jpg" alt="img" />
+      <img class="item-gallery" src="./img/img1.jpg" alt="img" />
+      <img class="item-gallery" src="./img/img2.jpg" alt="img" />
+    </div>
+
+    <div class="seccion-title" id="bio"></div>
+    <h1 class="seccion-title">BIO</h1>
+    <div class="head bio">
+      <img class="avatar" src="https://images.vexels.com/media/users/3/145908/preview2/52eabf633ca6414e60a7677b0b917d92-creador-de-avatar-masculino.jpg" alt="">
+      <h1>Titulo</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, sapiente amet! Eum explicabo maiores nulla praesentium deleniti voluptates. Ea voluptas laborum error quam doloremque! Tenetur magnam et odit quis nam.</p>
+    </div>
+
+    <div class="seccion-title" id="contact"></div>
+    <h1 class="seccion-title">CONTACTAME</h1>
+    <div class="head sc-form">
+      <form id="form" method="post">
+        <input type="email" name="email" >
+        <input type="text" name="text" >
+        <input type="submit" value="ENVIAR">
+      </form>
+    </div>
+
+    <footer>
+      <div class="footer-main">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-pinterest"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+      <p>&copy; Copyright 2018</p>
+    </footer>
+
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
+    <script src="./js/scroll.js"></script>
+    <script src="https://kit.fontawesome.com/f349cd4f76.js" crossorigin="anonymous"></script>
+  </body>
 </html>
