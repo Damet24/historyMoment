@@ -1,7 +1,15 @@
 let nav = document.querySelector("#nav");
 let topOfNav = nav.offsetTop;
+let op = document.querySelector("#nav");
+let topOfNav1 = op.offsetTop;
 
 function fixNav() {
+  if (window.scrollY >= topOfNav1) {
+    op.classList.add("fix");
+  } else {
+    op.classList.remove("fix");
+  }
+
   if (window.scrollY >= topOfNav) {
     nav.classList.add("fix");
   } else {

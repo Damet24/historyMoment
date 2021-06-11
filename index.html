@@ -13,13 +13,20 @@
   </head>
   <body>
     <div class="head" id="head">
-      <div class="main"><h1>texto de presentacion(o logo)</h1></div>
       <nav class="navigator" id="nav">
-        <a class="nav-item" href="#head">HOME</a>
-        <a class="nav-item" href="#gallery">GALERIA</a>
-        <a class="nav-item" href="#bio">BIO</a>
-        <a class="nav-item" href="#contact">CONTACTAME</a>
+        <a href="#head" class="nav-logo">History Moment</a>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="#gallery" class="nav-link">GALERIA</a></li>
+          <li class="nav-item"><a href="#bio" class="nav-link">BIO</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">CONTACTAME</a></li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </nav>
+      <div class="main"><h1>texto de presentacion(o logo)</h1></div>
     </div>
 
     <h1 class="seccion-title" id="gallery"></h1>
@@ -51,7 +58,7 @@
 
     <div class="seccion-title" id="bio"></div>
     <h1 class="seccion-title reveal">BIO</h1>
-    <div class="head bio reveal">
+    <div class="head biografy reveal">
       <img
         class="avatar"
         src="https://images.vexels.com/media/users/3/145908/preview2/52eabf633ca6414e60a7677b0b917d92-creador-de-avatar-masculino.jpg"
@@ -107,6 +114,7 @@
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
     <script src="./js/scroll.js"></script>
     <script src="./js/showElements.js"></script>
+    <script src="./js/navigation.js"></script>
     <script
       src="https://kit.fontawesome.com/f349cd4f76.js"
       crossorigin="anonymous"
